@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}

@@ -1,0 +1,109 @@
+.panier {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e55b00;
+}
+
+.paiement-form {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.paiement-form input,
+.paiement-form select {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.paiement-form button {
+  background: #008cba;
+}
+
+.paiement-form button:hover {
+  background: #007bb5;
+}
+
+/* Carte de paiement */
+.carte {
+  width: 300px;
+  height: 180px;
+  margin: 20px auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.carte div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carte-front {
+  background: #0044cc;
+  color: white;
+}
+
+.carte-back {
+  background: #222;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.carte.flip .carte-front {
+  transform: rotateY(180deg);
+}
