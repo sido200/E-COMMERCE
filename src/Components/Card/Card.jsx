@@ -1,17 +1,16 @@
 import "./Card.css";
-import product from "../../assets/product.png";
 import { Link } from "react-router-dom";
-export default function Card() {
+export default function Card({ data }) {
   return (
     <div className="card">
       <div className="image">
-        <img src={product} alt="product" />
+        <img src={data.image} alt="product" />
         <div className="info-card">
-          <h3>AirPods Pro 2</h3>
-          <p>Pro-level Active Noise Cancellation</p>
+          <h3>{data.title}</h3>
+          <p>{data.description}</p>
           <div className="price-buy">
-            <span>2000da</span>
-            <Link to="/Details/1">
+            <span>{data.price} $</span>
+            <Link to={`/Details/${data._id}`}>
               {" "}
               <button>Buy now</button>
             </Link>
